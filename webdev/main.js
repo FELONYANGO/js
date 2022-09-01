@@ -51,3 +51,82 @@ const myobjct ={
 const myArray = [40,50,2];
 const answerInFour = myobjct.pop2 ===(myArray[0]/myArray[2]);
 console.log(answerInFour);
+
+//=========challenge five========
+const myObject = {
+    myObjectOne :{
+        price :100,
+        nomber :2
+    },
+    myObjectTwo:{
+        price :150,
+        nomber :4
+    }
+};
+const myarray = [myObject.myObjectOne,myObject.myObjectTwo];
+const answerFive = (myarray[0].price*myarray[1].nomber);
+console.log(answerFive);
+//trial of mmediately invocked function
+
+(function felix(){
+    console.log("hello redington");    
+})();
+
+//arrow function=========
+const arrowFunction=()=>{
+    console.log("this is an arrow function");
+}
+arrowFunction();
+//=========SWITCH STATEMENT======
+function getPlanetName(id){
+    var name;
+    switch(id){
+        case 1:
+            name='mercury';
+  console.log(name);
+            break;
+        case 2:
+            name= 'venus';
+              console.log(name);
+            break;
+        case 3:
+            name  = 'earth';
+              console.log(name);
+            break;
+        case 4:
+            name =  'mars';
+            console.log(name);
+            break;
+        case 5:
+            name='jupiter';
+              console.log(name);
+            break;
+  console.log(name);
+        case 6:
+            name = 'satan';
+              console.log(name);
+            break;
+        case 7:
+            name = 'urenus';
+              console.log(name);
+            break;
+        case 8:
+            name = "neptune";
+              console.log(name);
+            break;
+
+        case 9:
+            name='pluto';
+              console.log(name);
+            break;
+
+
+        default:
+            name="please enter valid id btwn 1-9";
+            getPlanetName();
+  console.log(name);
+    }
+    return name;
+  
+}
+getPlanetName(6)
